@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: #2E2E2E;
+      color: #E6E6E6;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      color: #FFFFFF;
+    }
+    img {
+      max-width: 100%;
+      border: 2px solid #444;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section h2 {
+      color: #FFAAAA;
+    }
+  </style>
+</head>
+<body>
+  <h1>Settings - Connections</h1>
+
+  <div class="section">
+    <h2>CID</h2>
+    <p>Displays your node’s unique CID (Connection Identifier). Click it to copy it to your clipboard for sharing or backup purposes.</p>
+  </div>
+
+  <div class="section">
+    <h2>Port</h2>
+    <p>Shows the port Redlines uses to accept inbound connections from other nodes. Changing this will regenerate your CID, which could impact existing connections.</p>
+  </div>
+
+  <div class="section">
+    <h2>IP</h2>
+    <p>Shows your device's current IP address. Click to copy it to your clipboard if you need to share your node location with others manually.</p>
+  </div>
+
+  <div class="section">
+    <h2>Add Node by CID</h2>
+    <p>Paste another node’s CID into the input field to manually add it to your node list. Useful for directly connecting to a known peer.</p>
+  </div>
+  
+  <div class="section">
+    <h2>Import/Export Node List</h2>
+    <p>Import a `.nl` file containing nodes from another Redlines instance, or export your current list to back it up or migrate it to another device.</p>
+  </div>
+  
+  <div class="section">
+    <h2>View Node List</h2>
+    <p>Displays all currently known nodes, including their IP addresses. Lets you manually inspect and optionally test or ping each for availability.</p>
+  </div>
+  
+  <div class="section">
+    <h2>Clear Node List</h2>
+    <p>Deletes your entire list of known nodes. This action is irreversible and may disconnect you from your current network of peers unless restored from backup.</p>
+  </div>
+
+</body>
+</html>

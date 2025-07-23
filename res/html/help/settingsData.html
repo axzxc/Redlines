@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: #2E2E2E;
+      color: #E6E6E6;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      color: #FFFFFF;
+    }
+    img {
+      max-width: 100%;
+      border: 2px solid #444;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section h2 {
+      color: #FFAAAA;
+    }
+  </style>
+</head>
+<body>
+  <h1>Settings - Data Management</h1>
+
+  <div class="section">
+    <h2>Total Used Space</h2>
+    <p>Displays the total space currently used by your locally stored Redlines topics, not including core application files. Useful for monitoring disk usage and ensuring efficient storage management.</p>
+  </div>
+
+  <div class="section">
+    <h2>Export</h2>
+    <p>Exports all your saved topics and their associated data into a single '.tc' (topic container) file. You’ll be prompted to choose a destination on your machine. This is ideal for backing up or transferring your topics.</p>
+  </div>
+
+  <div class="section">
+    <h2>Import</h2>
+    <p>Allows you to load a previously exported '.tc' file into Redlines, restoring its topics and contents into your environment. This feature is useful for syncing across devices or restoring backups.</p>
+  </div>
+
+  <div class="section">
+    <h2>Max Topic Size</h2>
+    <p>Set a soft cap (in gigabytes) for the maximum allowable size of any individual topic. This helps prevent runaway storage use or excessively large topics that may impact performance.</p>
+  </div>
+  
+  <div class="section">
+    <h2>Clear all Topics</h2>
+    <p>Immediately and permanently removes all currently stored topics from Redlines. Use this option with caution, as this action is irreversible and cannot be undone.</p>
+  </div>
+
+</body>
+</html>

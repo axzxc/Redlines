@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: #2E2E2E;
+      color: #E6E6E6;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      color: #FFFFFF;
+    }
+    img {
+      max-width: 100%;
+      border: 2px solid #444;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section h2 {
+      color: #FFAAAA;
+    }
+  </style>
+</head>
+<body>
+  <h1>Settings - Preferences</h1>
+
+  <div class="section">
+    <h2>Debug Output</h2>
+    <p>Toggle the display of a debug console that shows real-time operations being executed.</p>
+  </div>
+
+  <div class="section">
+    <h2>Auto Zip Topic</h2>
+    <p>Automatically zips and republishes a topic upon any modification. Publishing time depends on the topic's size.</p>
+  </div>
+
+  <div class="section">
+    <h2>Allow Gossip</h2>
+    <p>Allow your node to share its connections with others. For example, if A is connected to B and B is connected to C, enabling gossip can connect A and C automatically.</p>
+  </div>
+
+  <div class="section">
+    <h2>Go Public</h2>
+    <p>Converts your Redlines node into a publicly accessible one. Attempts to use UPnP to open your port; otherwise, you'll need to set up port forwarding manually. (Private and public topics are separate—local-only nodes cannot access public topics and vice versa.)</p>
+  </div>
+  
+  <div class="section">
+    <h2>'Ding!' on Annotation</h2>
+    <p>Plays a 'Ding!' sound when an annotation is received on an open topic.</p>
+  </div>
+
+</body>
+</html>

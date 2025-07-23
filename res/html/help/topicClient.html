@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: #2E2E2E;
+      color: #E6E6E6;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      color: #FFFFFF;
+    }
+    img {
+      max-width: 100%;
+      border: 2px solid #444;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section h2 {
+      color: #FFAAAA;
+    }
+  </style>
+</head>
+<body>
+  <h1>Redlines - Topic (Client)</h1>
+
+  <div class="section">
+    <h2>Return</h2>
+    <p>Closes the currently opened topic view and navigates you back to the main Redlines hub. From there, you can browse through existing topics, open a different one for review, or initiate a new topic session.</p>
+  </div>
+
+  <div class="section">
+    <h2>Info</h2>
+    <p>Displays key metadata and diagnostics about the selected topic, essential for understanding its scope, structure, and internal consistency:</p>
+    <ul>
+      <li><strong>Number of Primary Sources</strong> – Total count of original materials (e.g., documents, media, datasets) directly cited as core evidence.</li>
+      <li><strong>Number of Secondary Sources</strong> – Count of supplementary materials offering commentary, interpretation, or contextual insight.</li>
+      <li><strong>Number of Related Topics</strong> – Number of thematically or structurally connected topics that help broaden understanding.</li>
+      <li><strong>Topic Author</strong> – Username or identifier of the individual who originally compiled or authored this topic.</li>
+      <li><strong>Topic Size</strong> – Storage size of the topic, including all its assets (sources, metadata, annotations, etc.).</li>
+      <li><strong>Topic UID</strong> – A globally unique identifier used to distinguish this topic in the system and enable cross-reference across nodes.</li>
+      <li><strong>Topic Hash</strong> – A cryptographic checksum used to ensure the topic’s authenticity and confirm no unauthorized modifications have occurred.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Author Status</h2>
+    <p>Displays the real-time connectivity status of the topic's author, helping you gauge the likelihood of receiving timely annotation responses:</p>
+    <ul>
+      <li><strong>Unreachable</strong> – The author's client ID (CID) is currently offline or cannot be located; communication is not possible.</li>
+      <li><strong>Connected & Closed</strong> – The author is online but has not opened this topic, so they won’t see annotations unless they reopen it.</li>
+      <li><strong>Connected & Open</strong> – The author is online and has the topic actively open, making it an ideal time to engage via annotations.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Annotations</h2>
+    <p>Provides access to the private annotation thread sent by you to the author. Here, you can view previously sent annotations and send new ones using the built-in message box. Each annotation has a 30-second cooldown to encourage thoughtful feedback and prevent spamming. All annotations are visible only to you and the author, ensuring privacy.</p>
+  </div>
+
+  <div class="section">
+    <h2>Primary</h2>
+    <p>Lists all primary sources attached to the topic. These are firsthand materials—such as transcripts, articles, video/audio clips, or datasets—that form the evidentiary backbone of the topic’s claims and arguments.</p>
+  </div>
+
+  <div class="section">
+    <h2>Secondary</h2>
+    <p>Displays secondary sources used to provide context, expert commentary, or related findings that support the topic’s primary evidence. These materials help enrich interpretation and validate assumptions.</p>
+  </div>
+
+  <div class="section">
+    <h2>Related</h2>
+    <p>Shows all topics within the system that are linked to this one through shared content, themes, or contributors. Understanding these relations helps users explore a broader narrative or cross-topic insight. Relation types include:</p>
+    <ul>
+      <li><strong>Other</strong> – General or non-categorized relationships.</li>
+      <li><strong>Background</strong> – Provides historical or contextual framing relevant to this topic.</li>
+      <li><strong>Follow-up</strong> – Expands upon or updates the topic with new developments or related sequences.</li>
+      <li><strong>Contrasting View</strong> – Offers a differing or opposing stance to introduce balance or critique.</li>
+      <li><strong>Similar Issue</strong> – Addresses a different subject that shares parallel characteristics or themes.</li>
+      <li><strong>Same Author</strong> – Authored by the same individual, which may indicate a continued train of thought or analysis.</li>
+      <li><strong>Expanded Analysis</strong> – Takes a deeper dive into a specific facet of the topic introduced at a higher level.</li>
+      <li><strong>Case Study</strong> – Applies the concepts of the topic to a practical or specific real-world example.</li>
+      <li><strong>Legislation/Policy</strong> – Covers laws, bills, or policy changes directly affecting or derived from the topic's content.</li>
+      <li><strong>Debunked Claim</strong> – Identifies and addresses inaccuracies or falsehoods originally tied to the topic.</li>
+      <li><strong>Updates</strong> – Reflects new information, corrections, or refinements added post-publication.</li>
+    </ul>
+  </div>
+
+</body>
+</html>
